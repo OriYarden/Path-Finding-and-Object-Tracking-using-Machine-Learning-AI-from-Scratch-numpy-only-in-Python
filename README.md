@@ -4,7 +4,7 @@ Here we have a world (grid); its size is 50 by 50:
 
 ![download (22)](https://github.com/OriYarden/Path-Finding-and-Object-Tracking-using-Machine-Learning-AI-from-Scratch-numpy-only-in-Python/assets/137197657/e77b5628-1ba8-4424-8fec-ebc233ad09b0)
 
-Inlcuding diagonal movements, the "best path" for the object (yellow) to reach the target (green) requires 49 actions:
+Including diagonal movements, the "best path" for the object (yellow) to reach the target (green) requires 49 actions:
 
 ![download (23)](https://github.com/OriYarden/Path-Finding-and-Object-Tracking-using-Machine-Learning-AI-from-Scratch-numpy-only-in-Python/assets/137197657/0db1cd7d-1039-4c8e-99a5-06ae817572cd)
 
