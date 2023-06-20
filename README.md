@@ -247,7 +247,7 @@ Below, I included the entire class and its methods:
         def get_feedback(self, current_pos, new_pos):
             error = sum([abs(self.target_pos[xy] - current_pos[xy]) - abs(self.target_pos[xy] - new_pos[xy]) for xy in range(2)])
             if self.diagonal_movements:
-            error += 0.5*sum([self.target_pos[xy] == current_pos[xy] == new_pos[xy] for xy in range(2)]) - 2*sum([self.target_pos[xy] != current_pos[xy] == new_pos[xy] for xy in range(2)]) - 0.5*sum([abs(self.target_pos[xy] - current_pos[xy]) < abs(self.target_pos[xy] - new_pos[xy]) for xy in range(2)])
+                error += 0.5*sum([self.target_pos[xy] == current_pos[xy] == new_pos[xy] for xy in range(2)]) - 2*sum([self.target_pos[xy] != current_pos[xy] == new_pos[xy] for xy in range(2)]) - 0.5*sum([abs(self.target_pos[xy] - current_pos[xy]) < abs(self.target_pos[xy] - new_pos[xy]) for xy in range(2)])
             return error
 
         def plot_world(self, path=None, show_paths=True):
