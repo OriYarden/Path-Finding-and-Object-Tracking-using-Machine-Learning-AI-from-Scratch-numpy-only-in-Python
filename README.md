@@ -70,7 +70,7 @@ Our training iteration begins with a while loop; more specifically, while not se
     def best_path_to_target(paths, minimum_actions_to_target):
         return False if not paths or len(paths[str(len(paths) - 1)]) - 1 > minimum_actions_to_target else True
 
-This method returns False if the paths dictionary is empty (obviously), and it returns False if the length of the previous path is greater than the mimimum number of actions to reach the target; otherwise, it returns True.
+This method returns False if the paths dictionary is empty (obviously), and it returns False if the length of the previous path is greater than the minimum number of actions to reach the target; otherwise, it returns True.
 
 Our outter training while loop creates the world (grid) and places the object at its starting position, and also stores that position:
 
