@@ -64,7 +64,7 @@ And we'll use a method to store_paths:
             self.paths[str(len(self.paths))] = []
         self.paths[str(len(self.paths) - 1)].append(pos)
 
-Our training iteration begins with a while loop; more specifically, while not self.best_path_to_target(self.paths, self.minimum_actions_to_target):
+Our training iteration begins with a while loop; more specifically, while not best_path_to_target(paths, minimum_actions_to_target):
 
     @staticmethod
     def best_path_to_target(paths, minimum_actions_to_target):
