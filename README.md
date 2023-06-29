@@ -323,8 +323,8 @@ Below, I included the entire class and its methods:
 
         def plot_paths_heatmap(self):
             paths = np.zeros((self.grid_size, self.grid_size)).astype(int)
-            for positions in self.paths.values():
-                for pos in positions:
+            for path in self.paths.values():
+                for pos in path:
                     paths[pos[0], pos[1]] += 1
             fig = plt.figure(figsize=(5, 5))
             ax = plt.subplot(1, 1, 1)
